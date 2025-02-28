@@ -85,6 +85,8 @@ const port = process.env.PORT || 5000;
 //   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 // });
 
+app.get("/", (req, res) => res.send("Backend Working"));
+
 server.listen(port, () => {
   console.log("server is working on port 5000");
 });
